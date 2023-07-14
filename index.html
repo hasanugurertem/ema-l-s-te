@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Web</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <div class="Email">
+                    <a href="#">Email</a>
+                </div>
+                <ul>
+                    <li><a href="#">CREATE SIGNATURE</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Step1')">Step1</button>
+            <button class="tablinks" onclick="openCity(event, 'Step2')">Step2</button>
+            <button class="tablinks" onclick="openCity(event, 'Step3')">Step3</button>
+            <button class="tablinks" onclick="openCity(event, 'Upload')">Upload</button>
+          </div>
+          
+          <div id="Step1" class="tabcontent">
+            <h3>Templates</h3>
+            <p>Choose a template to start building your email signature</p>
+          </div>
+          
+          <div id="Step2" class="tabcontent">
+            <h3>Your Info</h3>
+            <p>Type in your data to see how it looks on the template</p>
+            <h3>Add photo</h3>
+            <p>Pick your best photo (square or round), and click the question mark icon below to see how to add it.</p>
+        
+    <title>Adres Çubuğu</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="address-bar">
+        <input type="text" id="url-input" placeholder="URL'yi buraya girin">
+        <button id="go-button">Git</button>
+    </div>
+    
+    <div id="content">
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+                <body>
+                    <input type="range" id="slider" min="0" max="100" value="50">
+                    <span id="deger">50</span>
+                
+                    <script>
+                        var slider = document.getElementById("slider");
+                        var deger = document.getElementById("deger");
+                
+                        slider.oninput = function() {
+                            deger.textContent = this.value;
+                        };
+                    </script>
+                </body>
+                <script>
+                    function openCity(evt, cityName) {
+                      var i, tabcontent, tablinks;
+                      tabcontent = document.getElementsByClassName("tabcontent");
+                      for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                      }
+                      tablinks = document.getElementsByClassName("tablinks");
+                      for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                      }
+                      document.getElementById(cityName).style.display = "block";
+                      evt.currentTarget.className += " active";
+                    }
+
+                    document.getElementById("defaultOpen").click();
+                    </script>
+<h3>Personal & business info</h3>
+<p>Fill in your data. Don't want to use a field? Delete the placeholder text.</p>     
+<head>
+    <title>İsim Girme Çubuğu</title>
+</head>
+<body>
+    <label for="name-input">Full name:</label>
+    <input type="text" id="name-input" placeholder="">
+    <button onclick="goster()">Göster</button>
+
+    <script>
+        function goster() {
+            var nameInput = document.getElementById("name-input");
+            var name = nameInput.value;
+
+           
+        }
+    </script>
+    <br>
+</body>
+<body>
+    <label for="Job">Job title:</label>
+    <input type="text" id="Job" placeholder="">
+</body>
+<br>
+<body>
+    <label for="Dep">Departament:</label>
+    <input type="text" id="Dep" placeholder="">
+
+</body>
+<br>
+<body>
+    <label for="Com">Company:</label>
+    <input type="text" id="Com" placeholder="">
+
+</body>
+<h3>Contact info</h3>
+<body>
+    <label for="Work">Work email:</label>
+    <input type="text" id="Work" placeholder="">
+</body>
+<br>
+<p>Your website:</p>
+<head>
+    <title>Kendi Websitesini Ekle</title>
+</head>
+<body>
+    <input type="text" id="url-input" placeholder="Websitesinin URL'sini girin">
+    <button onclick="ekleWebsite()">Websitesini Ekle</button>
+    
+    <div id="website-list">
+    </div>
+
+    <script>
+        function ekleWebsite() {
+            var urlInput = document.getElementById("url-input");
+            var url = urlInput.value;
+            
+            var websiteList = document.getElementById("website-list");
+            var websiteLink = document.createElement("a");
+            websiteLink.href = url;
+            websiteLink.textContent = url;
+            
+            websiteList.appendChild(websiteLink);
+        }
+    </script>
+</body>
+<body>
+    <label for="Phone">Phone Number:</label>
+    <input type="text" id="Phone" placeholder="">
+</body> <br>
+<body>
+    <label for="Coma">Company adress:</label>
+    <input type="text" id="Coma" placeholder="">
+</body>
+<h3>Social media links</h3>
+<p>Add your social media profiles. URLs should start with https://.</p>
+<p>Twitter</p>
+
+<head>
+    <title>Twitter Adresi Girme Çubuğu</title>
+
+</head>
+<body>
+    <label for="twitter-input">Twitter Adresi:</label>
+    <input type="text" id="twitter-input" class="twitter-input" placeholder="Twitter adresinizi girin">
+    <button onclick="gotoTwitter()">Git</button>
+</body><br>
+
+<head>
+    <title>Facebook Adresi Girme Çubuğu</title>
+
+</head>
+<body>
+    <label for="facebook-input">Facebook Adresi:</label>
+    <input type="text" id="facebook-input" class="facebook-input" placeholder="Facebook adresinizi girin">
+    <button onclick="gotoFacebook()">Git</button>
+</body>
+            
+          </div>
+          
+          <div id="Step3" class="tabcontent">
+            <h3>Style</h3>
+            <p>Pick the style of your email signature</p>
+            <h4>Social media icons</h4>
+            <p>What should they look like</p>
+          </div>
+    </body>
+ 
+</html>
